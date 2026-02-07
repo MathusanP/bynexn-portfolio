@@ -1,3 +1,4 @@
+// Sidebar menu
 document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.querySelector('.sidebar');
     const menuBtn = document.querySelector('#menu-btn');
@@ -8,8 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Dim effect
 const dim = document.querySelector('.video-dim');
 
+// Background dim effect (on scroll)
 window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
     const max = window.innerHeight * 0.8;
@@ -24,3 +27,11 @@ window.addEventListener('scroll', () => {
     dim.style.backdropFilter = `blur(${blur}px)`;
     dim.style.webkitBackdropFilter = `blur(${blur}px)`;
 });
+
+ ScrollReveal().reveal('.grid-item', {
+    distance: '40px',
+    duration: 400,
+    easing: 'ease-out',
+    interval: 60,
+    reset: true,
+ })
