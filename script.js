@@ -30,8 +30,8 @@ window.addEventListener('scroll', () => {
 
  ScrollReveal().reveal('.grid-item', {
     distance: '40px',
-    duration: 400,
+    duration: 500,
     easing: 'ease-out',
-    interval: 60,
+    interval: 80,
     reset: true,
  })
