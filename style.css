@@ -164,7 +164,7 @@ body {
 .main {
     position: relative;
     z-index: 2;
-    padding: 120px 0 160px;
+    padding: 20px 0 160px;
 }
 
 .section-heading {
@@ -211,7 +211,6 @@ body {
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
     padding: 48px;
-    margin-top: 95vh;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
